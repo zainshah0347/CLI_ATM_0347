@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 // create a variable name  myBalance.
 // create a variable name pinCode.
 // use Inquirer.
@@ -44,4 +45,7 @@ if (mainResult.pinCode === pinCode) {
   } else if (mediumResult.multichoice === "Check_balance") {
     console.log("Your balance is : ", myBalance);
   }
+}
+else{
+    console.log("Please enter a valid PinCode");
 }

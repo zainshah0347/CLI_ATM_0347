@@ -1,5 +1,6 @@
+#! /usr/bin/env node
 // create a variable name  myBalance.
-// create a variable name pinCode. 
+// create a variable name pinCode.
 // use Inquirer.
 // and also use if else
 import inquirer from "inquirer";
@@ -9,8 +10,8 @@ let mainResult = await inquirer.prompt([
     {
         name: "pinCode",
         message: "Enter your pincode",
-        type: "number"
-    }
+        type: "number",
+    },
 ]);
 if (mainResult.pinCode === pinCode) {
     console.log("your pincode is correct");
@@ -19,8 +20,8 @@ if (mainResult.pinCode === pinCode) {
             name: "multichoice",
             message: "Please select one of them",
             type: "list",
-            choices: ["Withdraw", "Check_balance"]
-        }
+            choices: ["Withdraw", "Check_balance"],
+        },
     ]);
     if (mediumResult.multichoice === "Withdraw") {
         console.log("you choose withdraw");
@@ -28,8 +29,8 @@ if (mainResult.pinCode === pinCode) {
             {
                 name: "amount",
                 message: "Enter your amount you want to withdraw",
-                type: "number"
-            }
+                type: "number",
+            },
         ]);
         myBalance -= smallResult.amount;
         console.log("your remaining balance is ", myBalance);
@@ -37,4 +38,7 @@ if (mainResult.pinCode === pinCode) {
     else if (mediumResult.multichoice === "Check_balance") {
         console.log("Your balance is : ", myBalance);
     }
+}
+else {
+    console.log("Please enter a valid PinCode");
 }
