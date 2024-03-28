@@ -58,22 +58,22 @@ if (mainResult.pinCode === pinCode) {
         ]);
         if (fastCash.fastCash === 1000) {
             myBalance -= fastCash.fastCash;
-            console.log("You can successfully Fast Cash ", 1000);
+            console.log("You can successfully Fast Cash :", 1000);
             console.log("your remaining balance is :", myBalance);
         }
         else if (fastCash.fastCash === 2000) {
             myBalance -= fastCash.fastCash;
-            console.log("You can successfully Fast Cash ", 2000);
+            console.log("You can successfully Fast Cash :", 2000);
             console.log("your remaining balance is :", myBalance);
         }
         else if (fastCash.fastCash === 3000) {
             myBalance -= fastCash.fastCash;
-            console.log("You can successfully Fast Cash ", 3000);
+            console.log("You can successfully Fast Cash :", 3000);
             console.log("your remaining balance is :", myBalance);
         }
         else if (fastCash.fastCash === 5000) {
             myBalance -= fastCash.fastCash;
-            console.log("You can successfully Fast Cash ", 5000);
+            console.log("You can successfully Fast Cash :", 5000);
             console.log("your remaining balance is :", myBalance);
         }
     }
